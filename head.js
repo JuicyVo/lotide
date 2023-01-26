@@ -1,9 +1,9 @@
 //returns the first element in a array
 
-const head = function (arrayProvided) {
-  //console.log (arrayProvided[0])
-  return (arrayProvided[0])
-} 
+const head = function(headArray) {
+  //console.log (headArray)[0])
+  return (headArray[0]);
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -14,7 +14,7 @@ const assertEqual = function(actual, expected) {
 };
 
 
-/* 
+/*
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Labs");

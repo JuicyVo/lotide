@@ -1,34 +1,25 @@
-
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`🟢🟢🟢 Assertion Passed ${actual} === ${expected}`);
   } else {
-    console.log(`🔴🔴🔴 Assertion Failed ${actual} != ${expected}`); a;
+    console.log(`🔴🔴🔴 Assertion Failed ${actual} != ${expected}`);
+    a;
   }
 };
 
-const eqArrays = function(firstArray, secondArray) {
-  //console.log (firstArray)
-  //console.log (secondArray)
+const eqArrays = function (firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
-  //console.log ("false, different lengths")
-    return (false);
+    return false;
   } else {
     for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] !== (secondArray[i])) {
-      //console.log ("false, different values")
-        return (false);
+      if (firstArray[i] !== secondArray[i]) {
+        return false;
       } else {
-      //console.log ("true")
       }
     }
-    return (true);
+    return true;
   }
-  
 };
-
-
-
 
 console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
 console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false

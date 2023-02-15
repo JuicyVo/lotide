@@ -1,0 +1,22 @@
+{
+  "name": "@juicyvo/juicyvo",
+  "version": "1.0.0",
+  "description": "All my lotide functions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuicyVo/lotide.git"
+  },
+  "author": "juicyvo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuicyVo/lotide/issues"
+  },
+  "homepage": "https://github.com/JuicyVo/lotide#readme"
+}

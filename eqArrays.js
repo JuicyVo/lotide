@@ -1,13 +1,6 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢 Assertion Passed ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed ${actual} != ${expected}`);
-    a;
-  }
-};
+const assertEqual = require("./assertEqual");
 
-const eqArrays = function (firstArray, secondArray) {
+const eqArrays = function(firstArray, secondArray) {
   if (firstArray.length !== secondArray.length) {
     return false;
   } else {
@@ -21,11 +14,4 @@ const eqArrays = function (firstArray, secondArray) {
   }
 };
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
-console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
-
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false); // => should PASS
+module.exports = eqArrays;

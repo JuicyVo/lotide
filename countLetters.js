@@ -1,12 +1,4 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢 Assertion Passed ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed ${actual} != ${expected}`);
-  }
-};
-
-const countLetters = function (word) {
+const countLetters = function(word) {
   const result = {};
 
   for (const item of word) {
@@ -20,12 +12,14 @@ const countLetters = function (word) {
   return result;
 };
 
-countLetters("okk");
+module.exports = countLetters
+
+//countLetters("okk");
 // really gotta work on learning more on objects than arrays
 
 //for of loops works with strings
 
-/* 
+/*
 
 lightouse lab would return
 {

@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🟢🟢🟢 Assertion Passed ${actual} === ${expected}`);
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const eqArrays = function (firstArray, secondArray) {
+const eqArrays = function(firstArray, secondArray) {
   //console.log (firstArray)
   //console.log (secondArray)
   if (firstArray.length !== secondArray.length) {
@@ -25,7 +25,7 @@ const eqArrays = function (firstArray, secondArray) {
   }
 };
 
-const assertArrayEquals = function (firstArray, secondArray) {
+const assertArrayEquals = function(firstArray, secondArray) {
   console.log(eqArrays(firstArray, secondArray));
   let arrayAssert = eqArrays(firstArray, secondArray);
   if (arrayAssert === true) {
@@ -35,7 +35,7 @@ const assertArrayEquals = function (firstArray, secondArray) {
   }
 };
 
-const letterPositions = function (item) {
+const letterPositions = function(item) {
   const result = {};
   for (let i = 0; i <= item.length; i++) {
     let element = item[i];

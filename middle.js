@@ -1,40 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢 Assertion Passed ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require("./assertEqual");
 
-const eqArrays = function(firstArray, secondArray) {
-  //console.log (firstArray)
-  //console.log (secondArray)
-  if (firstArray.length !== secondArray.length) {
-  //console.log ("false, different lengths")
-    return (false);
-  } else {
-    for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] !== (secondArray[i])) {
-      //console.log ("false, different values")
-        return (false);
-      } else {
-      //console.log ("true")
-      }
-    }
-    return (true);
-  }
-};
+const eqArrays = require("./eqArrays");
 
-const assertArrayEquals = function(firstArray, secondArray) {
-  console.log(eqArrays(firstArray, secondArray));
-  let arrayAssert = eqArrays(firstArray, secondArray);
-  if (arrayAssert === true) {
-    console.log(`🟢🟢🟢 Assertion Passed ${firstArray} === ${secondArray}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed ${firstArray} !== ${secondArray}`);
-  }
-};
-
+// const assertArrayEquals = require("./assertArrayEquals");
 
 const middle = function(value) {
   let newMiddle = [];
@@ -47,7 +15,7 @@ const middle = function(value) {
       newMiddle1 = [Math.floor(value.length / 2)];
       newMiddle2 = Number(newMiddle1) + 1;
       newMiddle1.push(newMiddle2);
-      console.log(newMiddle1);
+      //console.log(newMiddle1);
       return newMiddle1;
   
     } else {
@@ -55,28 +23,9 @@ const middle = function(value) {
       newMiddle = [(Math.round(value.length + 1) / 2)];
       console.log(newMiddle);
       return newMiddle;
-  
-
     }
   }
 
 };
 
-
-//middle([1, 2]) // => [2, 3]
-//middle([1, 2, 3, 4]); // => [2, 3]
-//middle([1, 2, 3, 4, 5]) // => [3]
-//middle([1, 2, 3, 4, 5, 6]); // => [2, 3]
-
-/*
-middle([1, 2, 3]) // => [2]
-middle([1, 2, 3, 4, 5]) // => [3]
-
-middle([1, 2, 3, 4]) // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
-
-middle([1]) // => []
-middle([1, 2]) // => []
-
-
-*/
+module.exports = middle;

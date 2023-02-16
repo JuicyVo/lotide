@@ -1,5 +1,5 @@
-const without = require('../without')
-const assertArrayEquals = require ('../assertArrayEquals')
+const without = require('../without');
+const assertArrayEquals = require('../assertArrayEquals');
 
 without([1,1], [1,1]);
 without([1, 2, 3,4 ], [1]); // => [2, 3]

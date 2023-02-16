@@ -1,4 +1,4 @@
-const takeUntil = require ('../takeUntil')
+const takeUntil = require('../takeUntil');
 
 const data2 = [
   "I've",

@@ -56,4 +56,4 @@ const letterPositions = function(item) {
 letterPositions("hello");
 letterPositions("lighthouse in the house");
 
-module.exports = letterPositions
+module.exports = letterPositions;

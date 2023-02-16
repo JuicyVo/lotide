@@ -1,4 +1,4 @@
-const findKey = require ('../findKey')
+const findKey = require('../findKey');
 
 console.log(
   findKey(

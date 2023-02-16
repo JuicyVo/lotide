@@ -1,4 +1,4 @@
-const eqObjects = require ('../eqObjects')
+const eqObjects = require('../eqObjects');
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };

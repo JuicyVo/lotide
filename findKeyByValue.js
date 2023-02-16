@@ -1,37 +1,27 @@
-const assertEqual = require ("./assertEqual")
-
-const findKeyByValue = function(genres, entry) {
-  let placeholder = Object.keys(bestTVShowsByGenre);
+const findKeyByValue = function(objectInput, valueInput) {
+  let placeholder = Object.keys(objectInput);
   console.log(placeholder);
   let i = 0;
   let answer;
   for (const show of placeholder) {
-    // console.log(genres[show]);
-    // console.log(placeholder[i]);
-    if (entry === bestTVShowsByGenre[show]) {
+    if (valueInput === objectInput [show]) {
       answer = placeholder[i];
-    } else if (entry === show) {
-      answer = genres[show];
+    } else if (valueInput === show) {
+      answer = objectInput[show];
     } else answer === undefined;
 
     i++;
   }
-  console.log(answer);
+  //console.log(answer);
   return answer;
 };
-module.exports = findKeyByValue
-/*
-const bestTVShowsByGenre = {
+
+const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire",
+  drama:  "The Wire"
 };
 
-findKeyByValue(bestTVShowsByGenre, "The Expanse");
-findKeyByValue(bestTVShowsByGenre, "comedy");
-findKeyByValue(bestTVShowsByGenre, "That '70s Show");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+module.exports = findKeyByValue;
 
-//consider using for of loop to loop over keys returned by object.keys
-*/
+//messy upon fixing up but I'll redo it later, was too focused on the bestTveShows aspect

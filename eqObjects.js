@@ -1,6 +1,6 @@
-const assertEqual = require ('./assertEqual')
+const assertEqual = require('./assertEqual');
 
-const eqArrays = require ('./eqArrays')
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
   let firstKeys = Object.keys(object1).sort();
@@ -12,8 +12,6 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   for (const value of firstKeys) {
-    //console.log(object1[value]);
-    //console.log(object2[value]);
 
     if (Array.isArray(object1[value]) == true) {
       console.log("check");
@@ -31,4 +29,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-module.exports = eqObjects
+module.exports = eqObjects;

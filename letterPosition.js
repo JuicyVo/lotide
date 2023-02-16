@@ -47,9 +47,7 @@ const letterPositions = function(item) {
       }
     }
   }
-  //result[element]++; //this probably not right so keep it off
-  //console.log(counter)
-
+  //tried to change else if to else and bugs oout
   // logic to update results here
   console.log(result);
   return result;
@@ -57,7 +55,5 @@ const letterPositions = function(item) {
 
 letterPositions("hello");
 letterPositions("lighthouse in the house");
-//assertArrayEquals(letterPositions("hello"), [1]);
 
-//assertArrayEquals(letterPositions ("hello"))
-//should = h:1, e:2, l:3, 4, : o:5
+module.exports = letterPositions

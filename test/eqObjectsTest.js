@@ -8,3 +8,4 @@ const anotherMultiColorShirtObject = {
 };
 console.log(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject)); // => true
 console.log(eqObjects(longSleeveShirtObject, anotherMultiColorShirtObject));
+
